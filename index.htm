@@ -1,422 +1,364 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Para a Angel ♡</title>
-
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-body {
-  background: #100711;
-  color: #f3e8ff;
-  font-family: Arial, sans-serif;
-}
-
-header {
-  background: #160b18;
-  border-bottom: 1px solid #a855f7;
-  padding: 20px;
-  text-align: center;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
-
-header h2 {
-  color: #d8b4fe;
-  font-family: cursive;
-  margin-bottom: 15px;
-}
-
-nav {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 18px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  font-size: 13px;
-}
-
-nav a:hover {
-  color: #c084fc;
-}
-
-section {
-  padding: 55px 8%;
-  border-bottom: 1px solid #49246b;
-}
-
-.hero {
-  min-height: 440px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background:
-    radial-gradient(ellipse at top right, #5b21b6, transparent 55%),
-    linear-gradient(135deg, #190b20, #100711);
-}
-
-.small {
-  color: #e9d5ff;
-  font-family: cursive;
-  font-size: 24px;
-}
-
-h1 {
-  color: #d8b4fe;
-  font-size: clamp(42px, 8vw, 70px);
-  font-family: cursive;
-  text-shadow: 0 0 20px #a855f788;
-  margin: 12px 0;
-}
-
-p {
-  line-height: 1.8;
-  margin: 15px 0;
-}
-
-button {
-  background: #c084fc;
-  color: #271020;
-  border: none;
-  border-radius: 30px;
-  padding: 13px 22px;
-  font-weight: bold;
-  cursor: pointer;
-  margin-top: 15px;
-}
-
-button:hover {
-  background: #e9d5ff;
-  transform: scale(1.03);
-}
-
-h2 {
-  color: #d8b4fe;
-  font-family: cursive;
-  font-size: 29px;
-  margin-bottom: 20px;
-}
-
-.paper {
-  background: #f4d8ca;
-  color: #35202b;
-  padding: 25px;
-  border-radius: 4px;
-  box-shadow: 0 0 25px #0006;
-  transform: rotate(-1deg);
-}
-
-.paper h2 {
-  color: #5b21b6;
-}
-
-.paper p {
-  font-size: 14px;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 18px;
-}
-
-.item {
-  background: #21112e;
-  border: 1px solid #7e22ce;
-  border-radius: 14px;
-  padding: 20px;
-}
-
-.item h3 {
-  color: #d8b4fe;
-  font-family: cursive;
-  margin-bottom: 10px;
-}
-
-.symbol {
-  color: #c084fc;
-  font-size: 30px;
-  margin-bottom: 8px;
-}
-
-.center {
-  text-align: center;
-}
-
-.surprises {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
-}
-
-.answer {
-  display: none;
-  background: #2b1740;
-  border: 1px solid #c084fc;
-  border-radius: 12px;
-  padding: 20px;
-  margin-top: 18px;
-  line-height: 1.8;
-  animation: aparecer 0.5s ease;
-}
-
-.answer.show {
-  display: block;
-}
-
-@keyframes aparecer {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.heart {
-  color: #c084fc;
-  font-size: 65px;
-  text-shadow: 0 0 25px #9333ea;
-}
-
-footer {
-  padding: 25px;
-  text-align: center;
-  color: #d8b4fe;
-  font-family: cursive;
-}
-
-@media (max-width: 600px) {
-  section {
-    padding: 40px 6%;
-  }
-
-  .grid {
-    grid-template-columns: 1fr;
-  }
-
-  nav {
-    gap: 12px;
-  }
-
-  nav a {
-    font-size: 12px;
-  }
-}
-</style>
-</head>
-
-<body>
-
-<header>
-  <h2>💗 Para a Angel ♡</h2>
-  <nav>
-    <a href="#inicio">Início</a>
-    <a href="#mensagem">Minha Mensagem</a>
-    <a href="#especial">Por que você é especial?</a>
-    <a href="#surpresas">Surpresas</a>
-    <a href="#final">Final</a>
-  </nav>
-</header>
-
-<section class="hero" id="inicio">
-  <span class="small">Ei, Angel...</span>
-  <h1>Feliz Aniversário! ♡</h1>
-
-  <p>
-    Hoje é o seu dia, e eu só queria te lembrar
-    o quanto você é incrível, especial e importante.
-    Fiz esse site pensando em você, para mostrar
-    um pouquinho do carinho que sinto por você. 💕
-  </p>
-
-  <div>
-    <button onclick="irPara('mensagem')">
-      ♥️ Clique para continuar
-    </button>
-  </div>
-
-  <p class="small">Você torna tudo mais bonito. ✨</p>
-</section>
-
-<section id="mensagem">
-  <div class="paper">
-    <h2>♡ Minha mensagem pra você ♡</h2>
-
-    <p>Angel, eu nem sei por onde começar...</p>
-
-    <p>
-      Eu queria que você soubesse, o quanto eu gosto de você, 
-      pode parecer que eu nem gosto de voce ou algo do tipo,
-      o que não e verdade, eu me importo muito com você.
-      Só não sei como expressar tal sentimento.
-    </p>
-
-    <p>
-      Sou muito feliz por ter você na minha vida, por
-      nossas conversas, nossas risadas e por cada momento
-      que compartilhamos. Sua presença significa muito
-      para mim, e espero que você nunca duvide disso.
-    </p>
-
-    <p>
-      Neste aniversário, desejo que você receba todo o
-      carinho que merece. Que seus sonhos se realizem,
-      que nunca faltem motivos para sorrir e que você
-      tenha força para superar os dias difíceis.
-    </p>
-
-    <p>
-      Não tenho um presente caro para te dar, então fiz
-      este pequeno site. Cada palavra aqui foi pensada
-      para você, porque queria te oferecer algo diferente,
-      que pudesse guardar com carinho. ❤️
-    </p>
-
-    <p>
-      Feliz aniversário, meu amor! Que seu novo ciclo
-      seja tão lindo quanto a pessoa que você é.
-    </p>
-
-    <p style="text-align:right;font-family:cursive">
-      Com muito amor, de alguém que gosta muito de você ♡
-    </p>
-  </div>
-</section>
-
-<section id="especial">
-  <h2>Por que você é especial? ♡</h2>
-
-  <div class="grid">
-    <div class="item">
-      <div class="symbol">♡</div>
-      <h3>Seu sorriso</h3>
-      <p>Pode não parecer, mas eu gosto de ficar ao seu lado.</p>
-    </div>
-
-    <div class="item">
-      <div class="symbol">☆</div>
-      <h3>Sua força</h3>
-      <p>Admiro sua capacidade de continuar tentando, mesmo quando algo é difícil.</p>
-    </div>
-
-    <div class="item">
-      <div class="symbol">❀</div>
-      <h3>Seu jeito</h3>
-      <p>Não existe outra pessoa igual a você, e isso faz você ser tão especial.</p>
-    </div>
-
-    <div class="item">
-      <div class="symbol">☺️</div>
-      <h3>Quase tudo.</h3>
-      <p>Seu jeito de falar, suas manias e sua personalidade fazem diferença na minha vida.</p>
-    </div>
-  </div>
-</section>
-
-<section id="surpresas">
-  <h2>♡ Pequenas surpresas</h2>
-
-  <p>
-    Angel, escolhi algumas surpresinhas para você.
-    Clique nos botões e descubra cada mensagem! 💗
-  </p>
-
-  <div class="surprises">
-    <button onclick="revelar('a1')">♫ Uma música para você</button>
-    <button onclick="revelar('a2')">♡ O que me lembra você</button>
-    <button onclick="revelar('a3')">☆ O que admiro em você</button>
-    <button onclick="revelar('a4')">✧ Um desejo para seu futuro</button>
-  </div>
-
-  <div id="a1" class="answer">
-    Queria que existisse uma música capaz de transformar
-    todo o carinho que sinto por você em melodia.
-    Espero que alguma canção faça você sorrir hoje. ♫
-  </div>
-
-  <div id="a2" class="answer">
-    O céu bonito, as pequenas coisas da vida e aqueles
-    momentos inesperados que deixam o dia mais feliz.
-    Às vezes, são essas coisas simples que me fazem pensar em você. ✨
-  </div>
-
-  <div id="a3" class="answer">
-    Admiro seu jeito, sua personalidade, sua força e
-    a pessoa que você é. Espero que você consiga enxergar
-    todas essas qualidades lindas que existem em você. 💗
-  </div>
-
-  <div id="a4" class="answer">
-    Desejo que você tenha saúde, paz, felicidade e coragem
-    para realizar seus sonhos. Que a vida te dê muitas
-    oportunidades e pessoas que te façam bem. 🌷
-  </div>
-</section>
-
-<section class="center" id="final">
-  <h2>♡ Uma última coisa...</h2>
-
-  <p>
-    Se eu pudesse te dar uma coisa, seria a oportunidade
-    de você se enxergar pelos meus olhos.
-  </p>
-
-  <p>
-    Talvez assim você entendesse o quanto é incrível,
-    o quanto sua presença importa e o quanto merece
-    ser feliz.
-  </p>
-
-  <p style="color:#d8b4fe">
-    Feliz aniversário, Angel! Que seu dia seja inesquecível. ♡
-  </p>
-
-  <div class="heart">♡</div>
-
-  <button onclick="finalSurpresa()">
-    Abrir minha última mensagem 💌
-  </button>
-
-  <div id="ultima" class="answer">
-    <p>
-      Entre tantas pessoas no mundo, sou muito grato
-      por ter encontrado você. Espero poder continuar
-      compartilhando momentos, sorrisos e lembranças
-      bonitas ao seu lado. OBS; Isso tudo é verdade,
-      Não tenha dúvidas. 💜💜
-    </p>
-    <p>Você é muito especial para mim. Feliz aniverrr, meu amor! ❤️</p>
-  </div>
-</section>
-
-<footer>
-  Feito com muito carinho para você, Angel. ♡
-</footer>
-
-<script>
-function irPara(id) {
-  document.getElementById(id).scrollIntoView({
-    behavior: "smooth"
-  });
-}
-
-function revelar(id) {
-  document.getElementById(id).classList.toggle("show");
-}
-
-function finalSurpresa() {
-  document.getElementById("ultima").classList.toggle("show");
-}
-</script>
-
-</body>
+<!DOCTYPE html>  <html lang="pt-BR">  
+<head>  
+<meta charset="UTF-8">  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<title>Para a Angel ♡</title>  <style>  
+* {  
+  margin: 0;  
+  padding: 0;  
+  box-sizing: border-box;  
+  scroll-behavior: smooth;  
+}  
+  
+body {  
+  background: #100711;  
+  color: #fff0f7;  
+  font-family: Arial, sans-serif;  
+}  
+  
+header {  
+  background: #160b18;  
+  border-bottom: 1px solid #ff80bd;  
+  padding: 20px;  
+  text-align: center;  
+  position: sticky;  
+  top: 0;  
+  z-index: 10;  
+}  
+  
+header h2 {  
+  color: #ff9bc9;  
+  font-family: cursive;  
+  margin-bottom: 15px;  
+}  
+  
+nav {  
+  display: flex;  
+  justify-content: center;  
+  flex-wrap: wrap;  
+  gap: 18px;  
+}  
+  
+nav a {  
+  color: white;  
+  text-decoration: none;  
+  font-size: 13px;  
+}  
+  
+nav a:hover {  
+  color: #ff8bc5;  
+}  
+  
+section {  
+  padding: 55px 8%;  
+  border-bottom: 1px solid #713652;  
+}  
+  
+.hero {  
+  min-height: 440px;  
+  display: flex;  
+  flex-direction: column;  
+  justify-content: center;  
+  background:  
+    radial-gradient(ellipse at top right, #6d254c, transparent 55%),  
+    linear-gradient(135deg, #190b20, #100711);  
+}  
+  
+.small {  
+  color: #ffc5df;  
+  font-family: cursive;  
+  font-size: 24px;  
+}  
+  
+h1 {  
+  color: #ff9bc9;  
+  font-size: clamp(42px, 8vw, 70px);  
+  font-family: cursive;  
+  text-shadow: 0 0 20px #ff3e9d88;  
+  margin: 12px 0;  
+}  
+  
+p {  
+  line-height: 1.8;  
+  margin: 15px 0;  
+}  
+  
+button {  
+  background: #ff91c4;  
+  color: #271020;  
+  border: none;  
+  border-radius: 30px;  
+  padding: 13px 22px;  
+  font-weight: bold;  
+  cursor: pointer;  
+  margin-top: 15px;  
+}  
+  
+button:hover {  
+  background: #ffc1df;  
+  transform: scale(1.03);  
+}  
+  
+h2 {  
+  color: #ffacd2;  
+  font-family: cursive;  
+  font-size: 29px;  
+  margin-bottom: 20px;  
+}  
+  
+.paper {  
+  background: #f4d8ca;  
+  color: #35202b;  
+  padding: 25px;  
+  border-radius: 4px;  
+  box-shadow: 0 0 25px #0006;  
+  transform: rotate(-1deg);  
+}  
+  
+.paper h2 {  
+  color: #67354d;  
+}  
+  
+.paper p {  
+  font-size: 14px;  
+}  
+  
+.grid {  
+  display: grid;  
+  grid-template-columns: repeat(2, 1fr);  
+  gap: 18px;  
+}  
+  
+.item {  
+  background: #1e1020;  
+  border: 1px solid #a64d7b;  
+  border-radius: 14px;  
+  padding: 20px;  
+}  
+  
+.item h3 {  
+  color: #ff9bc9;  
+  font-family: cursive;  
+  margin-bottom: 10px;  
+}  
+  
+.symbol {  
+  color: #ff8bc5;  
+  font-size: 30px;  
+  margin-bottom: 8px;  
+}  
+  
+.center {  
+  text-align: center;  
+}  
+  
+.surprises {  
+  display: grid;  
+  grid-template-columns: repeat(2, 1fr);  
+  gap: 12px;  
+}  
+  
+.answer {  
+  display: none;  
+  background: #291329;  
+  border: 1px solid #ff8bc5;  
+  border-radius: 12px;  
+  padding: 20px;  
+  margin-top: 18px;  
+  line-height: 1.8;  
+  animation: aparecer 0.5s ease;  
+}  
+  
+.answer.show {  
+  display: block;  
+}  
+  
+@keyframes aparecer {  
+  from { opacity: 0; transform: translateY(10px); }  
+  to { opacity: 1; transform: translateY(0); }  
+}  
+  
+.heart {  
+  color: #ff8bc5;  
+  font-size: 65px;  
+  text-shadow: 0 0 25px #ff4d9d;  
+}  
+  
+footer {  
+  padding: 25px;  
+  text-align: center;  
+  color: #ffacd2;  
+  font-family: cursive;  
+}  
+  
+@media (max-width: 600px) {  
+  section {  
+    padding: 40px 6%;  
+  }  
+  
+  .grid {  
+    grid-template-columns: 1fr;  
+  }  
+  
+  nav {  
+    gap: 12px;  
+  }  
+  
+  nav a {  
+    font-size: 12px;  
+  }  
+}  
+</style>  </head>  <body>  <header>  
+  <h2>💗 Para a Angel ♡</h2>  
+  <nav>  
+    <a href="#inicio">Início</a>  
+    <a href="#mensagem">Minha Mensagem</a>  
+    <a href="#especial">Por que você é especial?</a>  
+    <a href="#surpresas">Surpresas</a>  
+    <a href="#final">Final</a>  
+  </nav>  
+</header>  <section class="hero" id="inicio">  
+  <span class="small">Ei, Angel...</span>  
+  <h1>Feliz Aniversário! ♡</h1>    <p>  
+    Hoje é o seu dia, e eu só queria te lembrar  
+    o quanto você é incrível, especial e importante.  
+    Fiz esse site pensando em você, para mostrar  
+    um pouquinho do carinho que sinto por você. 💕  
+  </p>    <div>  
+    <button onclick="irPara('mensagem')">  
+      ♥️ Clique para continuar  
+    </button>  
+  </div>    <p class="small">Você torna tudo mais bonito. ✨</p>  
+</section>  <section id="mensagem">  
+  <div class="paper">  
+    <h2>♡ Minha mensagem pra você ♡</h2>  <p>Angel, eu nem sei por onde começar...</p>  
+
+<p>  
+  Eu queria que você soubesse, o quanto eu gosto de você,   
+  pode parecer que eu nem gosto de voce ou algo do tipo,  
+  o que não e verdade, eu me importo muito com você.  
+  Só não sei como expressar tal sentimento.  
+</p>  
+
+<p>  
+  Sou muito feliz por ter você na minha vida, por  
+  nossas conversas, nossas risadas e por cada momento  
+  que compartilhamos. Sua presença significa muito  
+  para mim, e espero que você nunca duvide disso.  
+</p>  
+
+<p>  
+  Neste aniversário, desejo que você receba todo o  
+  carinho que merece. Que seus sonhos se realizem,  
+  que nunca faltem motivos para sorrir e que você  
+  tenha força para superar os dias difíceis.  
+</p>  
+
+<p>  
+  Não tenho um presente caro para te dar, então fiz  
+  este pequeno site. Cada palavra aqui foi pensada  
+  para você, porque queria te oferecer algo diferente,  
+  que pudesse guardar com carinho. ❤️  
+</p>  
+
+<p>  
+  Feliz aniversário, meu amor! Que seu novo ciclo  
+  seja tão lindo quanto a pessoa que você é.  
+</p>  
+
+<p style="text-align:right;font-family:cursive">  
+  Com muito amor, de alguém que gosta muito de você ♡  
+</p>
+
+  </div>  
+</section>  <section id="especial">  
+  <h2>Por que você é especial? ♡</h2>    <div class="grid">  
+    <div class="item">  
+      <div class="symbol">♡</div>  
+      <h3>Seu sorriso</h3>  
+      <p>Pode não parecer, mas eu gosto de ficar ao seu lado.</p>  
+    </div>  <div class="item">  
+  <div class="symbol">☆</div>  
+  <h3>Sua força</h3>  
+  <p>Admiro sua capacidade de continuar tentando, mesmo quando algo é difícil.</p>  
+</div>  
+
+<div class="item">  
+  <div class="symbol">❀</div>  
+  <h3>Seu jeito</h3>  
+  <p>Não existe outra pessoa igual a você, e isso faz você ser tão especial.</p>  
+</div>  
+
+<div class="item">  
+  <div class="symbol">☺️</div>  
+  <h3>Quase tudo.</h3>  
+  <p>Seu jeito de falar, suas manias e sua personalidade fazem diferença na minha vida.</p>  
+</div>
+
+  </div>  
+</section>  <section id="surpresas">  
+  <h2>♡ Pequenas surpresas</h2>    <p>  
+    Angel, escolhi algumas surpresinhas para você.  
+    Clique nos botões e descubra cada mensagem! 💗  
+  </p>    <div class="surprises">  
+    <button onclick="revelar('a1')">♫ Uma música para você</button>  
+    <button onclick="revelar('a2')">♡ O que me lembra você</button>  
+    <button onclick="revelar('a3')">☆ O que admiro em você</button>  
+    <button onclick="revelar('a4')">✧ Um desejo para seu futuro</button>  
+  </div>    <div id="a1" class="answer">  
+    Queria que existisse uma música capaz de transformar  
+    todo o carinho que sinto por você em melodia.  
+    Espero que alguma canção faça você sorrir hoje. ♫  
+  </div>    <div id="a2" class="answer">  
+    O céu bonito, as pequenas coisas da vida e aqueles  
+    momentos inesperados que deixam o dia mais feliz.  
+    Às vezes, são essas coisas simples que me fazem pensar em você. ✨  
+  </div>    <div id="a3" class="answer">  
+    Admiro seu jeito, sua personalidade, sua força e  
+    a pessoa que você é. Espero que você consiga enxergar  
+    todas essas qualidades lindas que existem em você. 💗  
+  </div>    <div id="a4" class="answer">  
+    Desejo que você tenha saúde, paz, felicidade e coragem  
+    para realizar seus sonhos. Que a vida te dê muitas  
+    oportunidades e pessoas que te façam bem. 🌷  
+  </div>  
+</section>  <section class="center" id="final">  
+  <h2>♡ Uma última coisa...</h2>    <p>  
+    Se eu pudesse te dar uma coisa, seria a oportunidade  
+    de você se enxergar pelos meus olhos.  
+  </p>    <p>  
+    Talvez assim você entendesse o quanto é incrível,  
+    o quanto sua presença importa e o quanto merece  
+    ser feliz.  
+  </p>    <p style="color:#ff9bc9">  
+    Feliz aniversário, Angel! Que seu dia seja inesquecível. ♡  
+  </p>    <div class="heart">♡</div>    <button onclick="finalSurpresa()">  
+    Abrir minha última mensagem 💌  
+  </button>    <div id="ultima" class="answer">  
+    <p>  
+      Entre tantas pessoas no mundo, sou muito grato  
+      por ter encontrado você. Espero poder continuar  
+      compartilhando momentos, sorrisos e lembranças  
+      bonitas ao seu lado. OBS; Isso tudo é verdade,  
+      Não tenha dúvidas. 💜💜  
+    </p>  
+    <p>Você é muito especial para mim. Feliz aniverrr, meu amor! ❤️</p>  
+  </div>  
+</section>  <footer>  
+  Feito com muito carinho para você, Angel. ♡  
+</footer>  <script>  
+function irPara(id) {  
+  document.getElementById(id).scrollIntoView({  
+    behavior: "smooth"  
+  });  
+}  
+  
+function revelar(id) {  
+  document.getElementById(id).classList.toggle("show");  
+}  
+  
+function finalSurpresa() {  
+  document.getElementById("ultima").classList.toggle("show");  
+}  
+</script>  </body>  
 </html>
